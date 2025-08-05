@@ -45,20 +45,3 @@
 We sincerely thank the authors of [MultiModal-DeepFake](https://github.com/rshaojimmy/MultiModal-DeepFake) for their excellent work.  
 We heavily used the code from their repository in developing this project.
 
-
----
-
-### 📚 Citation
-If you find our work helpful, please cite our paper:
-```bash
-bibtex@article{hu2024multimodal,
-  title={Multimodal Deepfake Detection via Coarse-Aware Localization Refinement and Semantic Alignment},
-  author={Hu, Bingwen and Zhou, Jun and Zheng, Zhedong and Wang, Yaxiong and Wu, Aming and Yang, Yi},
-  journal={Pattern Recognition},
-  year={2024},
-  publisher={Elsevier}
-}
-
-  <sub>Built with ❤️ for advancing multimodal deepfake detection research</sub>
-</div>
-```
