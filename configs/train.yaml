@@ -1,0 +1,37 @@
+train_file: ["../../datasets/DGM4/metadata/train.json"]
+val_file: ["../../datasets/DGM4/metadata/val.json"]           
+bert_config: 'configs/config_bert.json'
+
+image_res: 256
+vision_width: 768
+embed_dim: 256
+batch_size_train: 8
+batch_size_val: 8
+temp: 0.07
+queue_size: 65536
+momentum: 0.995
+alpha: 0.4
+max_words: 50
+label_smoothing: 0.0
+ratio: 50
+
+loss_TMG_F_wgt: 10
+
+loss_nrr_wgt: 1
+loss_cmpm_wgt: 4
+
+loss_CSA_wgt: 0.1
+loss_BIC_wgt: 1
+loss_bbox_wgt: 0.2
+loss_giou_wgt: 0.2
+loss_TMG_wgt: 1
+loss_MLC_wgt: 1
+
+
+optimizer: {opt: adamW, lr: 2.5e-6, lr_img: 1.25e-05 , weight_decay: 0.02}
+schedular: {sched: cosine, lr: 2.5e-6, epochs: 50, min_lr: 1e-8, decay_rate: 1, warmup_lr: 1e-6, warmup_epochs: 10, cooldown_epochs: 0}
+
+
+
+
+
