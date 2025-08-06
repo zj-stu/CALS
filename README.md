@@ -36,9 +36,11 @@
 
 ### Installation
 
-1. Clone the repository:
-2. git clone https://github.com/your-username/CALS.git
-3. cd CALS
+ Clone the repository:
+ ```
+ git clone https://github.com/your-username/CALS.git
+ cd CALS
+```
 ---
 
 ### 🙏 Acknowledgements
