@@ -410,7 +410,7 @@ class CALS(nn.Module):
                 vl_output = self.itm_head(output_pos.last_hidden_state[:,0,:])   
                 loss_BIC = F.cross_entropy(vl_output, itm_labels) 
              
-                ##================= MLC ========================## 
+                ##================= EMLC ========================## 
                 cross_embeds_cls = local_feat_it_cross_attn
                 cls_f = self.fch(cross_embeds_cls[:, 1:, :], cross_embeds_cls[:, 0, :])
                 cls_t = self.cls_head(output_pos.last_hidden_state[:,0,:])
